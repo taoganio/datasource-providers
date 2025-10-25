@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="io.github.taoganio.provider.test.mapper.MybatisDataSourceMapper">
+<mapper namespace="io.github.taoganio.datasource.provider.test.mapper.MybatisDataSourceMapper">
 
     <insert id="insertUser">
         INSERT INTO test.user(id, name) values (21, 'test_user')

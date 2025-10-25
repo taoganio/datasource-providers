@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.config;
+package io.github.taoganio.datasource.provider.test.config;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.startup.Tomcat;

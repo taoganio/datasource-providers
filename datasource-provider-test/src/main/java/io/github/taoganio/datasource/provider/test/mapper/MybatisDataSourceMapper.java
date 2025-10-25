@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.mapper;
+package io.github.taoganio.datasource.provider.test.mapper;
 
 public interface MybatisDataSourceMapper {
 

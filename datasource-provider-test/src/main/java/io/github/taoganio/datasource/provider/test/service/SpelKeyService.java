@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.service;
+package io.github.taoganio.datasource.provider.test.service;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;

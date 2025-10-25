@@ -1,6 +1,6 @@
-package io.github.taoganio.provider.test;
+package io.github.taoganio.datasource.provider.test;
 
-import io.github.taoganio.provider.test.service.*;
+import io.github.taoganio.datasource.provider.test.service.*;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

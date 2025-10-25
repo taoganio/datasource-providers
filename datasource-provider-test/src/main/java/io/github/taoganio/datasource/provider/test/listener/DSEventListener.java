@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.listener;
+package io.github.taoganio.datasource.provider.test.listener;
 
 import io.github.taoganio.jdbc.provider.spring.boot.JdbcDSReleaseEvent;
 import io.github.taoganio.jdbc.provider.spring.boot.JdbcDSSwitchingEvent;

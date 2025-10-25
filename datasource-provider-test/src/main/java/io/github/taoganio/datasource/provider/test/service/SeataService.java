@@ -1,7 +1,7 @@
-package io.github.taoganio.provider.test.service;
+package io.github.taoganio.datasource.provider.test.service;
 
+import io.github.taoganio.datasource.provider.test.mapper.MybatisDataSourceMapper;
 import io.github.taoganio.jdbc.provider.spring.boot.JdbcDS;
-import io.github.taoganio.provider.test.mapper.MybatisDataSourceMapper;
 import org.apache.seata.spring.annotation.GlobalTransactional;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;

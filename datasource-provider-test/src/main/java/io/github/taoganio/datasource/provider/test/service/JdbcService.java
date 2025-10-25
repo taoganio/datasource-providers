@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.service;
+package io.github.taoganio.datasource.provider.test.service;
 
 import io.github.taoganio.datasource.provider.ReadWriteScope;
 import io.github.taoganio.jdbc.provider.spring.boot.JdbcDS;

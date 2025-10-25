@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test;
+package io.github.taoganio.datasource.provider.test;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -13,15 +13,15 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @EnableCaching
-@MapperScan("io.github.taoganio.provider.test.mapper")
+@MapperScan("io.github.taoganio.datasource.provider.test.mapper")
 @EnableTransactionManagement
-public class ProviderTestApplication {
+public class DataSourceProviderTestApplication {
 
-    private static final Logger log = LoggerFactory.getLogger(ProviderTestApplication.class);
+    private static final Logger log = LoggerFactory.getLogger(DataSourceProviderTestApplication.class);
 
     private final DataSource dataSource;
 
-    public ProviderTestApplication(DataSource dataSource) {
+    public DataSourceProviderTestApplication(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
@@ -32,7 +32,7 @@ public class ProviderTestApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderTestApplication.class, args);
+        SpringApplication.run(DataSourceProviderTestApplication.class, args);
     }
 
 

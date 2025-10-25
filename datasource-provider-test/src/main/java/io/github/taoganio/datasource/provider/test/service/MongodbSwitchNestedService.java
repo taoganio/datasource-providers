@@ -1,4 +1,4 @@
-package io.github.taoganio.provider.test.service;
+package io.github.taoganio.datasource.provider.test.service;
 
 import io.github.taoganio.mongodb.provider.spring.boot.MongoDS;
 import com.mongodb.client.MongoCollection;
