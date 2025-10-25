@@ -50,6 +50,10 @@ datasource-providers/
 ### 多环境部署
 开发、测试、生产环境的数据源管理，支持环境隔离。
 
+## 核心模块
+### [JDBC Provider Spring Boot Starter 使用教程](https://github.com/taoganio/datasource-providers/tree/main/jdbc-datasource-provider-spring-boot-starter)
+### [MongoDB Provider Spring Boot Starter 使用教程](https://github.com/taoganio/datasource-providers/tree/main/mongodb-datasource-provider-spring-boot-starter)
+
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request 来改进这个项目。
