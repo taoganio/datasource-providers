@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    include:
+      - datasource-jdbc
+      - datasource-mongo
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+seata:
+  application-id: springboot-seata
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: false

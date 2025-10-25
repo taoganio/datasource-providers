@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    jdbc:
+      strict: true
+      #      pool:
+      #        type: com.atomikos.jdbc.AtomikosDataSourceBean
+      #        properties:
+      #          minPoolSize: 1
+      #          max-pool-size: 10
+      #          borrowConnectionTimeout: 30
+
+      # 数据源定义
+      definitions:
+        db1:
+          name: db1
+          url: jdbc:postgresql://localhost:5432/database1
+          username: postgres
+          password: 123456
+        db2:
+          name: db2
+          url: jdbc:postgresql://localhost:5432/database2
+          username: postgres
+          password: 123456
+        db3:
+          name: db3
+          url: jdbc:postgresql://localhost:5432/database3
+          username: postgres
+          password: 123456
+
+      routers:
+        datasource:
+          routes:
+            customer: db2
+            user: db1
+            site: db2
+
+        readwrite:
+          routes:
+            site:
+              read: db3

@@ -1,0 +1,46 @@
+datasource:
+  # 主数据源配置
+  primary: master
+  # 数据源定义
+  definitions:
+    master:
+      host: localhost
+      port: 27017
+      username: admin
+      password: 123456
+      database: admin
+      authenticationDatabase: admin
+      serverSelectionTimeout: 10000
+    slave1:
+      host: localhost
+      port: 27017
+      username: admin
+      password: 123456
+      database: admin
+      authenticationDatabase: admin
+      serverSelectionTimeout: 10000
+    slave2:
+      host: localhost
+      port: 27017
+      username: admin
+      password: 123456
+      database: admin
+      authenticationDatabase: admin
+      serverSelectionTimeout: 10000
+
+  # 数据源提供配置
+  routers:
+
+    datasource:
+      term: [ slave2 ]
+      mailfriend: [ slave1, slave2 ]
+
+    readwrite:
+      mailfriend:
+        read: slave1
+        write: master
+        any: slave2
+      term:
+        read: slave2
+        write: master
+        any: slave1

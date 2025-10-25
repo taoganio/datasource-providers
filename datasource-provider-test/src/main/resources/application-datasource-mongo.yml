@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    mongodb:
+      # 启动动态数据源
+      ds-aop: true
+      strict: true
+      # 主数据源配置
+      primary: master
+      # 数据源定义
+      definitions:
+        master:
+          host: localhost
+          port: 27027
+          username: admin
+          password: 123456
+          database: admin
+          authenticationDatabase: admin
+        slave1:
+          host: localhost
+          port: 27017
+          username: admin
+          password: 123456
+          database: admin
+          authenticationDatabase: admin
+
+      routers:
+        datasource:
+          enabled: false
+        readwrite:
+          enabled: false
+

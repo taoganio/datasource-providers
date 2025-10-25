@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.github.taoganio.jdbc.provider.spring.boot.autoconfigure.JdbcDataSourceProviderConfiguration,\
+io.github.taoganio.jdbc.provider.spring.boot.autoconfigure.JdbcDataSourceRoutingProvidersConfiguration,\
+io.github.taoganio.jdbc.provider.spring.boot.autoconfigure.DynamicJdbcDataSourceConfiguration

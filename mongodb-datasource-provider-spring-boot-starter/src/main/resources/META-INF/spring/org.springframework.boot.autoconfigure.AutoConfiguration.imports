@@ -1,0 +1,3 @@
+io.github.taoganio.mongodb.provider.spring.boot.autoconfigure.MongoDataSourceProviderConfiguration
+io.github.taoganio.mongodb.provider.spring.boot.autoconfigure.MongoDataSourceRoutingProvidersConfiguration
+io.github.taoganio.mongodb.provider.spring.boot.autoconfigure.DynamicMongoDataSourceConfiguration
